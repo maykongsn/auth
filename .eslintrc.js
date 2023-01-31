@@ -21,6 +21,14 @@ module.exports = {
         tsx: "never",
       },
     ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        devDependencies: false,
+        optionalDependencies: false,
+        peerDependencies: false,
+      },
+    ],
     "prettier/prettier": [
       "error",
       {
@@ -31,10 +39,12 @@ module.exports = {
       },
     ],
     semi: ["error", "always"],
+    "import/prefer-default-export": "off",
     "class-methods-use-this": "off",
     "import/no-unresolved": "off",
     "no-dupe-keys": "off",
     "no-unused-vars": "off",
+    "import/extensions": "off",
     "no-useless-constructor": "off",
     "no-empty-function": "off",
     "max-classes-per-file": "off",
